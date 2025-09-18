@@ -1,67 +1,57 @@
-Quick Utility (QU) Library
+✅ Clean, simple, and easy!
 
-Quick Utility is a lightweight, fast, and practical JavaScript library designed to simplify common operations on strings, numbers, and dates. It’s perfect for developers who want to perform daily tasks like generating random strings, manipulating text, calculating percentages, or adding a typewriter effect with minimal code.
+🎲 Random & Boolean
 
-Key Features
-Random & Boolean
+✅ QU.RandomStr(length, loc) → Generates a random string (A-Z, a-z, 0-9).
 
-QU.RandomStr(length, loc) – Generates a random string of the given length (A-Z, a-z, 0-9). Optionally outputs to a DOM element by specifying loc.
+✅ QU.RandomBool() → Returns a random boolean (true or false).
 
-QU.RandomBool() – Returns a random boolean value (true or false).
+✅ QU.RandomHex(target) → Generates a random HEX color. Updates the target element if provided.
 
-QU.RandomHex(target) – Generates a random hex color. If target is provided, it updates the color of that DOM element.
+⏰ Date & Time
 
-Date & Time
+✅ QU.Date(locale, loc) → Returns the current date (supports localization).
 
-QU.Date(locale, loc) – Returns the current date. Optionally localizes with locale and outputs to loc.
+✅ QU.Time(target) → Returns the current time. Can auto-update a DOM element.
 
-QU.Time(target) – Returns the current time. Can update a DOM element by specifying target.
+❌ Persian Calendar Support → 📆 Planned, not implemented yet
 
-String Manipulation
+✍️ String Manipulation
 
-QU.Case.upper(text) – Converts text to uppercase.
+✅ QU.Case.upper(text) → Converts text to 🔠 UPPERCASE.
 
-QU.Case.lower(text) – Converts text to lowercase.
+✅ QU.Case.lower(text) → Converts text to 🔡 lowercase.
 
-QU.Case.capitalize(text) – Capitalizes the first letter of the string.
+✅ QU.Case.capitalize(text) → Capitalizes the 🔤 first letter.
 
-QU.Case.capitalizeWords(text) – Capitalizes the first letter of each word.
+✅ QU.Case.capitalizeWords(text) → Capitalizes the 📝 first letter of every word.
 
-QU.Reverse(text) – Reverses the string.
+✅ QU.Reverse(text) → 🔄 Reverses a string.
 
-QU.Shuffle(text) – Randomly shuffles characters in a string.
+✅ QU.Shuffle(text) → 🎲 Randomly shuffles characters.
 
-QU.Slugify(text) – Converts text to a URL-friendly format.
+✅ QU.Slugify(text) → 🌐 Converts text into a URL-friendly slug.
 
-Number Utilities
+❌ QU.TrimAllSpaces(text) → ✂️ Planned
 
-QU.Clamp(value, min, max) – Restricts a number to stay within min and max.
+🔢 Number Utilities
 
-QU.Percent(part, total) – Calculates the percentage of part relative to total.
+✅ QU.Clamp(value, min, max) → 📏 Keeps a number within range.
 
-DOM Helpers
+✅ QU.Percent(part, total) → 📊 Calculates percentage.
 
-QU.Remove(id) – Removes a DOM element by its ID.
+❌ QU.RandomInt(min, max) → 🎲 Planned
 
-QU.TypeWriter({ texts, target, speed, pause, loop }) – Animates typing for an array of strings (texts) in a typewriter style. Parameters:
+🖥️ DOM Helpers
 
-target – ID of the DOM element.
+✅ QU.Remove(id) → 🗑️ Removes an element by ID.
 
-speed – typing speed in milliseconds.
+✅ QU.TypeWriter({ texts, target, speed, pause, loop }) → ⌨️ Typewriter text animation.
 
-pause – pause between words.
-
-loop – if true, cycles indefinitely.
-
-Installation
-
-Include the library in your project:
-
+📦 Installation
 <script src="QuickUtility.js"></script>
 
-
-Then call its functions directly:
-
+🛠️ Usage Examples
 // Random string
 QU.RandomStr(10);
 
@@ -71,9 +61,6 @@ QU.Case.upper("Quick Utility");
 // Typewriter effect
 QU.TypeWriter({ texts:["Quick Utility"], target:"demo", speed:100 });
 
-Example Output in DOM
-
-You can also output results to a specific element by providing its id in functions that support loc or target:
-
-QU.RandomStr(12, "output1"); // Displays in element with ID "output1"
+🖼️ Example in DOM
+QU.RandomStr(12, "output1");   // Displays in element with ID "output1"
 QU.Date(undefined, "dateBox"); // Displays date in element with ID "dateBox"
