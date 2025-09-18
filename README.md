@@ -48,6 +48,10 @@
 
 ✅ QU.TypeWriter({ texts, target, speed, pause, loop }) → ⌨️ Typewriter text animation.
 
+✅QU.get(target id) → gets value or innerHTML of a tag automatic
+
+✅QU.get(target , true) → you can set anything after QU.get like QU.get("myinp" , true).style.color = "red"
+
 📦 Installation
 <script src="QuickUtility.js"></script>
 
